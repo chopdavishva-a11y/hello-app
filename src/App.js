@@ -6,8 +6,6 @@ import About from './components/About';
 import React, {useState} from 'react';
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-
-
 function App() {
   const [mode, setMode] = useState('light');  // mode for dark/light toggle
   const [alert, setAlert] = useState(null);   // alert message storage
@@ -72,11 +70,11 @@ function App() {
               element={<TextForm heading="Enter text to analyze" mode={mode} showAlert={showAlert} />}
             />
 
-            {/* About route */}
+            {/* About route 
             <Route 
               path="/about" 
               element={<About />} 
-            />
+            />*/}
 
           </Routes>
         </div>
